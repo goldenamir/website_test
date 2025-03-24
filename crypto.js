@@ -61,4 +61,6 @@ async function fetchCryptoData() {
         const data = await response.json();
         displayCryptoData(data);
     } catch (error) {
-        console.error('Error fetching crypto
+        console.error('Error fetching crypto data:', error);
+    }
+}
