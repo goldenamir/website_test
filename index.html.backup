@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+        style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+        font-src 'self' https://cdn.jsdelivr.net;
+        img-src 'self' https://assets.coingecko.com data:;
+        connect-src 'self' https://api.coingecko.com;
+    ">
+    <title>Crypto Market Info</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="data:,">
+</head>
+<body>
+    <nav class="menu-bar">
+        <div class="menu-left">
+            <a href="index.html" class="logo">
+                <img src="/images/DALL·E-2025-03-23-12.47.58.svg" alt="PCM Logo" class="logo-image">
+                <span class="logo-text" style="color: #1C39BB; font-family: 'Vazirmatn';">پی‌سی‌ام</span>
+            </a>
+            <a href="index.html" class="menu-item active" data-en="Home" data-fa="خانه"></a>
+            <a href="news.html" class="menu-item" data-en="News" data-fa="اخبار"></a>
+        </div>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('en')" class="lang-btn">English</button>
+            <button onclick="switchLanguage('fa')" class="lang-btn">فارسی</button>
+        </div>
+    </nav>
+
+    <div class="greeting">
+        <h1 data-en="!Happy Nowruz 1404 🌹" data-fa="نوروز ۱۴۰۴ مبارک! 🌹"></h1>
+        <p data-en="Welcome to Crypto Market Information" data-fa="به سامانه اطلاعات بازار رمز ارز خوش آمدید"></p>
+    </div>
+
+    <div class="crypto-container" id="cryptoContainer">
+        <!-- Crypto cards will be inserted here -->
+    </div>
+
+    <script src="/crypto.js"></script>
+</body>
+</html> 
